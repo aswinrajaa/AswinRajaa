@@ -26,62 +26,114 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </Head>
 <Body>
-    <div class="LoadingAnimation">
-		<div class="centerPlacement">
-			<div class="LoadingScreen"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-		</div>
-	</div>
-    <header>
-        <div id="navigationbar">
-			<div>
-                <ul>
-                    <li>
-                        <a href="">About Myself</a>
-                    </li>
-                    <li>
-                        <a href="">My Works</a>
-                    </li>
-                    <li>
-                        <a href="">Education</a>
-                    </li>
-                    <li>
-                        <a href="">Skills</a>
-                    </li>
-                    <li>
-                        <a href="">Contact Me</a>
-                    </li>
-                </ul>
+    <div>
+        <!--loading Animation-->
+        <div class="LoadingAnimation"></div>
+
+        <!--Scrollbar-->
+        <div id="ProgressBar"></div>
+
+        <!--Navigationbar-->
+        <div id="Navbar">
+            <div class="Logo">
+                <h1>ASWIN RAJAA</h1>
             </div>
-		</div>
-    </header>
-    <body>
-        <div>
-            <!--<div class="WhatsappChat">
-				<a href="https://wa.me/918608651006" target="_blank">Whatsapp Number
-					<span class="WhatsappName">WhatsApp</span>
-					<button class="Logo" title=""><i class="fa fa-whatsapp"></i></button>
-				</a>
-			</div>-->
+            <ul class="MenuItems">
+                <li>
+                    <a href="#">
+                        Me Myself
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        My Works
+                    </a>
+                    <ul class="SubMenuItems">
+                        <li>
+                            <a href="#">
+                                Full Stack Web Developer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Web Developer
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        My Education
+                    </a>
+                    <ul class="SubMenuItems">
+                        <li>
+                            <a href="#">
+                                Master of Science in Computer Science
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Electrical and Electronics Engineering
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
         </div>
-    </body>
-    <footer>
-        <div class="container">
-            <!--https://www.linkedin.com/in/aswin-rajaa-chandra-sekaran-8aa575177/ !LinkedIn Link! -->
-            <div class="row">
-                <div class="col alignCenter">
-                    <a href="tel: +91 - 8667802323" class="logo"><i class="fa fa-phone"></i></a>
+
+        <!--Main Page Contents-->
+        <div id="content">
+
+            <!--Open/Close Navbar-->
+            <div class="navbarbtn_layout">
+                <div id="NavbarButton">
+                    <div id="FirstLine"></div>
+                    <div id="SecondLine"></div>
+                    <div id="ThirdLine"></div>
                 </div>
-                <div class="col alignCenter">
-                    <a href="https://wa.me/918608651006" target="_blank" class="logo"><i class="fa fa-whatsapp"></i></a>
-                </div>
-                <div class="col alignCenter">
-                    <a href="mailto:aswinrajaa25@gmail.com" class="logo"><i class="fa fa-envelope"></i></a>
-                </div>
-                <div class="col alignCenter">
-                    <a href="https://www.linkedin.com/in/aswin-rajaa-chandra-sekaran-8aa575177/" target="_blank" class="logo"><i class="fa fa-linkedin"></i></a>
+                <div class="ToggleThemeButtonLayout">
+                    <label class="switch ToggleThemeButtonLayout" >
+                        <input type="checkbox" id="ToggleThemeButton">
+                        <span class="slider"></span>
+                    </label>
                 </div>
             </div>
+            <div>
+                <div class="Main_content">
+                    
+                </div>
+                <footer>
+                    <div class="container">
+                        <!--https://www.linkedin.com/in/aswin-rajaa-chandra-sekaran-8aa575177/ !LinkedIn Link! -->
+                        <div class="row">
+                            <div class="col alignCenter">
+                                <a href="tel: +91 - 8667802323" class="logo"><i class="fa fa-phone"></i></a>
+                            </div>
+                            <div class="col alignCenter">
+                                <a href="https://wa.me/918608651006" target="_blank" class="logo"><i class="fa fa-whatsapp"></i></a>
+                            </div>
+                            <div class="col alignCenter">
+                                <a href="mailto:aswinrajaa25@gmail.com" class="logo"><i class="fa fa-envelope"></i></a>
+                            </div>
+                            <div class="col alignCenter">
+                                <a href="https://www.linkedin.com/in/aswin-rajaa-chandra-sekaran-8aa575177/" target="_blank" class="logo"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
         </div>
-    </footer>
+    </div>
 </Body>
 </Html>
