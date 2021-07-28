@@ -15,10 +15,43 @@ document.addEventListener(
 );
 
 $(window).on("load",function(){
-  $(".LoadingAnimation").fadeOut("slow");
   setTimeout(
-      function(){
-      },2000);
+      function() {
+        $("#content").fadeIn("slow");
+        $(".LoadingAnimation").slideUp("slow");
+      },8000);
+  setTimeout(
+    function() {
+      $(".welcomeMessage1").fadeIn("slow");
+      setTimeout(
+        function() {
+          $(".welcomeMessage1").fadeOut("slow");
+          setTimeout(
+            function() {
+              $(".welcomeMessage2").fadeIn("slow");
+              setTimeout(
+                function() {
+                  $(".welcomeMessage2").fadeOut("slow");
+                  setTimeout(
+                    function() {
+                      $(".welcomeMessage3").fadeIn("slow");
+                      setTimeout(
+                        function() {
+                          $(".welcomeMessage3").fadeOut("slow");
+                          setTimeout(
+                            function() {
+                              $(".welcomeMessage4").fadeIn("slow");
+                              setTimeout(
+                                function() {
+                                  $(".welcomeMessage4").fadeOut("slow");
+                                }, 1000);
+                            }, 1000);
+                        }, 1000);
+                    }, 1000);
+                },1000);
+            },1000);
+        },1000);
+    },1000);
 });
 $(document).ready(function(){
   $("#NavbarButton").click(function(){
@@ -39,17 +72,6 @@ $(document).ready(function(){
         $('.Logo').css({'opacity':'1','transition-duration':'0.1s','margin-top':'0px'});
         $('.MenuItems').css({'opacity':'1','transition-duration':'0.5s','margin-top':'0px'});
       },400);
-    }
-  });
-  $('#ToggleThemeButton').click(function(){
-    if(getComputedStyle(document.documentElement).getPropertyValue('--bg-color') == '#000'){
-      document.documentElement.style.setProperty('--bg-color',"#fff");
-      document.documentElement.style.setProperty('--font-color-1',"#000");
-      document.documentElement.style.setProperty('--font-color-2',"#fff");
-    }else{
-      document.documentElement.style.setProperty('--bg-color',"#000");
-      document.documentElement.style.setProperty('--font-color-1',"#fff");
-      document.documentElement.style.setProperty('--font-color-2',"#000");
     }
   });
 });
